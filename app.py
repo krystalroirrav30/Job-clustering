@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
-from scraper import scrape_karkidi_jobs
-from model_utils import load_model_and_vectorizer
+from scripts.scraper import scrape_karkidi_jobs
+from scripts.model_utils import load_model_and_vectorizer
+
 from sklearn.preprocessing import normalize
 
 @st.cache_resource
